@@ -1,9 +1,11 @@
 // Ready-made designs. Replace these SAMPLE entries with the real catalogue.
 // image: file in images/products/ (optional; a metal-coloured tile shows when missing)
-// material: 'copper' | 'silver' | 'brass'   type: 'Rings' | 'Necklaces' | 'Bracelets' | 'Earrings' | 'Anklets' | 'Other'
+// material: 'copper' | 'silver' | 'brass' | 'beads'   type: 'Rings' | 'Necklaces' | 'Bracelets' | 'Earrings' | 'Anklets' | 'Other'
 window.PRODUCTS = [
-  // Add real designs here, e.g.
-  // { id:'copper-coil-ring', name:'Coil Ring', material:'copper', type:'Rings', price:120, image:'coil-ring.jpg', desc:'Hand-coiled copper band.' },
+  { id:'spiral-wire-earrings', name:'Spiral Wire Earrings', material:'brass', type:'Earrings', price:120, image:'spiral-wire-earrings.jpg', desc:'Hand-coiled wire spirals around a natural bead.' },
+  { id:'statement-bead-bracelet', name:'Statement Bead Bracelet', material:'beads', type:'Bracelets', price:150, image:'statement-bead-bracelet.jpg', desc:'Chunky amber, russet and faceted beads on stretch cord.' },
+  { id:'gemstone-chip-bracelet', name:'Gemstone Chip Bracelet', material:'beads', type:'Bracelets', price:90, image:'gemstone-chip-bracelet.jpg', desc:'Colourful gemstone chips with gold-tone spacers.' },
+  // Add more designs above this line.
 ];
 
 // Sample entries used for layout testing (not live):
