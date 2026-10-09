@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Order — EsTerra Craft</title>
+<meta name="description" content="Commission a one-of-a-kind handmade jewelry piece in copper, silver or brass. GHC 150 deposit.">
+<link rel="canonical" href="https://craft.dwatamon.com/custom.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23626657'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' fill='white' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="custom">
+<div id="site-header"></div>
+
+<main class="wrap">
+  <div class="pagehead"><p class="eyebrow">One of a kind</p><h1>Custom order</h1><p>Describe the piece you want. A GHC 150 deposit reserves your slot.</p></div>
+  <form class="form" id="customForm">
+    <div class="two"><label>Your name<input name="name" required autocomplete="name"></label><label>Phone / WhatsApp<input name="phone" type="tel" required autocomplete="tel" placeholder="024 000 0000"></label></div>
+    <label>Email <span style="text-transform:none;letter-spacing:0;font-weight:400">(for your payment receipt)</span><input name="email" type="email" autocomplete="email"></label>
+    <div class="two">
+      <label>Type of piece<select name="type" required><option>Ring</option><option>Necklace</option><option>Bracelet</option><option>Earrings</option><option>Anklet</option><option>Other</option></select></label>
+      <label>Metal<select name="metal" required><option>Copper</option><option>Silver</option><option>Brass</option><option>Not sure, advise me</option></select></label>
+    </div>
+    <div class="two"><label>Size / length<input name="size" placeholder="e.g. ring size 7, 18 inch chain"></label><label>Needed by<input name="date" type="date"></label></div>
+    <label>Describe your piece<textarea name="desc" required placeholder="Shape, style, engraving, stones, who it is for, anything that inspires you..."></textarea></label>
+    <div class="deposit"><strong id="depAmt">GHC 150</strong><p>Upfront deposit to begin your custom piece. It is deducted from the final price.</p><p id="depNote">Pay securely by mobile money or card.</p></div>
+    <p class="note">Have inspiration photos? Send them on WhatsApp right after submitting.</p>
+    <div class="msg" id="formMsg"></div>
+    <button class="btn" id="payBtn" type="submit">Send request</button>
+  </form>
+</main>
+
+<div id="site-footer"></div>
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<script src="js/config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
