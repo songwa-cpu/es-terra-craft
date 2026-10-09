@@ -161,3 +161,8 @@ textarea{min-height:140px;resize:vertical}
   .brand{font-size:1.25rem}
   .artist .portrait{max-width:320px}
 }
+
+/* gallery */
+.gallery{columns:3 260px;column-gap:16px}
+.gallery img{width:100%;margin-bottom:16px;border-radius:14px;cursor:zoom-in;break-inside:avoid;transition:transform .25s}
+.gallery img:hover{transform:scale(1.015)}
